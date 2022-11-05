@@ -1,0 +1,188 @@
+/* cette section est responsable pour les font du texte utilisé 
+    et remet tous les margin et tout les padding de dafaut à 0 */
+@font-face {
+	font-family: "gras";
+	src: url("fonts/static/Manrope-ExtraBold.ttf");
+}
+@font-face {
+	font-family: "normal";
+	src: url("fonts/static/Manrope-Medium.ttf");
+}
+
+*{
+    margin: 0;
+	padding:0;
+}
+
+/* cette section est pour l'image de fond  */
+.header{
+    height: 100vh;
+    width: 100%;
+    padding: none;
+    margin: none;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/antartica.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* logo */
+nav img{
+    width: 100px;
+}
+
+/* le menu de navigation */
+nav{
+    font-family: "gras";
+    display: flex;
+    padding: 2% ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* les liens dans le menu de navigation */
+.links{
+    text-align: right;
+}
+
+.links ul li{
+    list-style: none;
+    flex: 1;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.links ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+}
+
+.links ul li a:hover{
+    color: #1967b9;
+    transition: 0.1s;
+}
+
+.text a{
+    margin: 5em;
+    padding: 15px 2em;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    font-family: "normal";
+}
+
+.text a:hover{
+    border: 1px solid #87CEFA;
+    background-color: #87CEFA;
+    transition: 0.2s;
+}
+.text a:active{
+    transition-duration: 1s;
+}
+    
+/* paragraphe au dessous du titre */
+.text{
+    font-family: "normal";
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 91.6px;
+    text-align: center;
+}
+
+/* Titre */
+.text h1{
+    font-size: 80px;
+    font-family: "gras";
+    margin-bottom: 1em;
+}
+
+
+
+
+/* section du contenu */
+
+.contenu-1{
+    max-width: 50%;
+    margin: auto;
+    text-align: left;
+    padding-top: 100px;
+}
+.contenu-1 h2{
+    font-family: "gras";
+    font-size: 40px;
+}
+
+.contenu-1 p{
+    font-family: "normal";
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px;
+    margin-bottom: 3em;
+}
+
+/* première image */
+.contenu-1 .pole-vrai{
+    margin-top: 1em;
+    float: right;
+  width: 500px;
+  border: 1px solid black;
+}
+
+/* image du navire */
+.navire{
+	width: 100%;
+}
+
+/* dernière image */
+#nansen {
+    width: 100%;
+}
+
+/* footer */
+
+footer{
+    margin-top: 6em;
+    padding: 2em;
+    background-color: #000050;
+    color: white;
+}
+footer p{
+    text-align: center;
+    font-family: "normal";
+}
+footer h4{
+  	text-align: center;
+    font-family: "gras";
+    font-size: 30px;
+}
+footer ul{
+    padding-left: 43%;
+    padding-top: 2em;
+}
+footer ul li{
+    list-style: none;
+    font-family: "normal";
+}
+
+.copyright{
+    font-size: 10px;
+    color: grey;
+    margin-top: 3em;
+}
+
+
+@media screen and (max-width: 600px) {
+    .text h1{
+        font-size: 30px;
+    }
+    
+}
